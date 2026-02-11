@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samuel Online Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+    SamFashion
+</div>
+<div>
+    <h1>Samuel Online Store</h1>
+    <p>Your Best Shopping Experience</p>
+    </div>
+</header>
+
+<nav>
+
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="./contact.html">Contact</a>
+</nav>
+
+<section class="container">
+
+    <!-- Product 1 -->
+    <div class="product">
+        <img src="./IMG-20251110-WA0010.jpg" alt="Running Shoes">
+        <h3>Balenciaga</h3>
+        <p>$14</p>
+        <button onclick="addToCart('Running Shoes', 50)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="./IMG-20251110-WA0009.jpg" alt="Running Shoes">
+        <h3>Summer-camp</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Running Shoes', 50)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="./IMG-20251205-WA0030.jpg" alt="Running Shoes">
+        <h3>Phone-Watch</h3>
+        <p>$18</p>
+        <button onclick="addToCart('Running Shoes', 50)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="./IMG-20251203-WA0058.jpg" alt="Running Shoes">
+        <h3>Wrist-Watch</h3>
+        <p>$25</p>
+        <button onclick="addToCart('Running Shoes', 50)">Add to Cart</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+        <img src="./IMG-20251111-WA0000.jpg" alt="Smart Watch">
+        <h3>Baggy-Jean</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Smart Watch', 80)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="./IMG-20251110-WA0015.jpg" alt="Smart Watch">
+        <h3>Mens-polo</h3>
+        <p>$10</p>
+        <button onclick="addToCart('Smart Watch', 80)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="./IMG-20260127-WA0061.jpg" alt="XL-shoe">
+        <h3>XL-shoe</h3>
+        <p>$40</p>
+        <button onclick="addToCart('XL-shoe', 80)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="./IMG-20260127-WA0064.jpg" alt="Senator-Shoe">
+        <h3>Senator-Shoe</h3>
+        <p>$50</p>
+        <button onclick="addToCart('Senator-Shoe', 80)">Add to Cart</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+        <img src="./IMG-20251203-WA0044.jpg" alt="Mens-watch">
+        <h3>Mens-watch</h3>
+        <p>$20</p>
+        <button onclick="addToCart('Mens-watch', 40)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="./IMG-20251203-WA0042.jpg" alt="Mens-watch">
+        <h3>Mens-watch</h3>
+        <p>$20</p>
+        <button onclick="addToCart('Mens-watch', 40)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="./IMG-20251203-WA0040.jpg" alt="ice wrist-watch">
+        <h3>ice wrist-watch</h3>
+        <p>$40</p>
+        <button onclick="addToCart('ice wrist-watch', 40)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="./IMG-20251203-WA0046.jpg" alt="ice wrist-watch">
+        <h3>ice wrist-watch</h3>
+        <p>$40</p>
+        <button onclick="addToCart('ice wrist-watch', 40)">Add to Cart</button>
+    </div>
+
+</section>
+
+<section class="cart">
+    <h2>🛒 Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: $<span id="total">0</span></h3>
+    <a href="checkout.html"><button class="checkout-btn">proceed to checkout</button></a>
+</section>
+
+<footer>
+    <p>&copy; 2026 Samuel Store | All Rights Reserved</p>
+</footer>
+
+<!-- Link JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 style="text-align:center;">Checkout</h2>
+
+<form onsubmit="placeOrder(event)">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Address" required>
+    <input type="text" placeholder="Phone Number" required>
+
+
+    <h3>Total: ₦<span id="checkout-total">0</span></h3>
+
+    <button type="submit" class="checkout-btn">Pay Now</button>
+</form>
+
+<script src="script.js"></script>
+
+<script>
+    // Show total on checkout page
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let total = 0;
+    cart.forEach(item => {
+        total += item.price * item.quantity;
+    });
+
+    document.getElementById("checkout-total").textContent = total;
+
+    function placeOrder(e) {
+        e.preventDefault();
+        localStorage.removeItem("cart");
+        window.location.href = "success.html";
+    }
+</script>
+
+</body>
+</html>
+
